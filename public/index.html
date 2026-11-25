@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <!-- 1) 기본 메타 -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 2) Favicon & PWA -->
+  <link rel="icon" href="%PUBLIC_URL%/logo512.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo512.ico" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <!-- 3) 기본 SEO 메타: 페이지별 세부 메타는 React SEO 컴포넌트에서 관리 -->
+  <title>▪신분평 에피트 더웨이시티</title>
+
+  <!-- 요청에 따라 description 문구 유지 -->
+  <meta name="description"
+    content="신분평 에피트 더웨이시티ㅣ☎️(대표)1533-8848ㅣ 청주 신분평 에피트 더웨이시티ㅣ충청북도 청주시 서원구 장성동 135번지 일원ㅣ총 992세대ㅣ59㎡A·B, 75㎡A·B, 84㎡A·B, 112㎡ㅣ견본주택ㅣ모델하우스ㅣ청약ㅣ분양가ㅣ공급정보ㅣ방문예약" />
+
+  <meta name="keywords" content="신분평 에피트 더웨이시티, 청주 신분평 에피트 더웨이시티" />
+
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+
+  <link rel="canonical" href="https://www.jijeforena.co.kr/" />
+
+  <!-- 3-1) SNS / crawler fallback: React Helmet 적용 전 기본값 제공 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:site_name" content="신분평 에피트 더웨이시티" />
+  <meta property="og:title" content="신분평 에피트 더웨이시티" />
+
+  <!-- 요청에 따라 OG description 문구 유지 -->
+  <meta property="og:description"
+    content="신분평 에피트 더웨이시티ㅣ☎️(대표)1533-8848ㅣ 청주 신분평 에피트 더웨이시티ㅣ충청북도 청주시 서원구 장성동 135번지 일원ㅣ총 992세대ㅣ59㎡A·B, 75㎡A·B, 84㎡A·B, 112㎡ㅣ견본주택ㅣ모델하우스ㅣ청약ㅣ분양가ㅣ공급정보ㅣ방문예약" />
+
+  <meta property="og:url" content="https://www.jijeforena.co.kr/" />
+  <meta property="og:image" content="https://www.jijeforena.co.kr/img/og/main.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="신분평 에피트 더웨이시티 조감도" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="신분평 에피트 더웨이시티" />
+
+  <!-- 요청에 따라 Twitter description 문구 유지 -->
+  <meta name="twitter:description"
+    content="신분평 에피트 더웨이시티ㅣ☎️(대표)1533-8848ㅣ 청주 신분평 에피트 더웨이시티ㅣ충청북도 청주시 서원구 장성동 135번지 일원ㅣ총 992세대ㅣ59㎡A·B, 75㎡A·B, 84㎡A·B, 112㎡ㅣ견본주택ㅣ모델하우스ㅣ청약ㅣ분양가ㅣ공급정보ㅣ방문예약" />
+
+  <meta name="twitter:image" content="https://www.jijeforena.co.kr/img/og/main.jpg" />
+  <meta name="twitter:image:alt" content="신분평 에피트 더웨이시티 조감도" />
+
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="theme-color" content="#01496f" />
+
+  <!-- 4) 웹마스터 검증 -->
+  <meta name="naver-site-verification" content="957e726495d9dcb6e3515ea4377ce4ffb6de5986" />
+  <meta name="google-site-verification" content="15KKmR6Mn-g7xf7mRrDo6Jb-MA9OcAeBOpMKBQj5eVY" />
+
+  <!-- 5) RSS, Sitemap -->
+  <link rel="alternate" type="application/rss+xml" title="신분평 에피트 더웨이시티 RSS"
+    href="https://www.jijeforena.co.kr/rss.xml" />
+  <link rel="sitemap" type="application/xml" title="신분평 에피트 더웨이시티 사이트맵"
+    href="https://www.jijeforena.co.kr/sitemap.xml" />
+
+  <!-- 6) DNS-Prefetch & 폰트 프리로드 -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&family=Roboto:wght@700&display=swap"
+    onload="this.rel='stylesheet'" />
+
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&family=Roboto:wght@700&display=swap" />
+  </noscript>
+
+  <!-- 7) Static structured data: JS 실행 전 검색엔진 보조용 정적 데이터 -->
+  <script id="static-seo-jsonld" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.jijeforena.co.kr/#organization",
+        "name": "신분평 에피트 더웨이시티",
+        "url": "https://www.jijeforena.co.kr/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.jijeforena.co.kr/logo512.ico"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+82-1533-8848",
+          "contactType": "분양 문의",
+          "areaServed": "KR",
+          "availableLanguage": "Korean"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.jijeforena.co.kr/#website",
+        "url": "https://www.jijeforena.co.kr/",
+        "name": "신분평 에피트 더웨이시티",
+        "alternateName": "청주 신분평 에피트 더웨이시티",
+        "inLanguage": "ko-KR",
+        "publisher": {
+          "@id": "https://www.jijeforena.co.kr/#organization"
+        }
+      },
+      {
+        "@type": "ApartmentComplex",
+        "@id": "https://www.jijeforena.co.kr/#apartment",
+        "name": "신분평 에피트 더웨이시티",
+        "alternateName": "청주 신분평 에피트 더웨이시티",
+        "url": "https://www.jijeforena.co.kr/",
+        "image": "https://www.jijeforena.co.kr/img/og/main.jpg",
+        "description": "충청북도 청주시 서원구 장성동 135번지 일원, 장성지구 A2블록에 조성되는 총 992세대 규모의 신분평 에피트 더웨이시티입니다. 전용면적 59㎡A·B, 75㎡A·B, 84㎡A·B, 112㎡ 주택형으로 구성되며 분양정보, 청약, 공급안내, 평면도, 견본주택과 모델하우스 방문예약 정보를 안내합니다.",
+        "telephone": "1533-8848",
+        "numberOfAccommodationUnits": 992,
+        "numberOfRooms": 992,
+        "brand": {
+          "@type": "Brand",
+          "name": "에피트",
+          "alternateName": "EFETE"
+        },
+        "creator": {
+          "@type": "Organization",
+          "name": "HL디앤아이한라㈜"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "KR",
+          "addressRegion": "충청북도",
+          "addressLocality": "청주시 서원구",
+          "streetAddress": "장성동 135번지 일원"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "name": "신분평 에피트 더웨이시티 주요 메뉴",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SiteNavigationElement",
+              "name": "브랜드소개",
+              "url": "https://www.jijeforena.co.kr/Brand/intro"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SiteNavigationElement",
+              "name": "사업안내",
+              "url": "https://www.jijeforena.co.kr/BusinessGuide/intro"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SiteNavigationElement",
+              "name": "입지환경",
+              "url": "https://www.jijeforena.co.kr/LocationEnvironment/intro"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "SiteNavigationElement",
+              "name": "단지안내",
+              "url": "https://www.jijeforena.co.kr/ComplexGuide/intro"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "SiteNavigationElement",
+              "name": "분양안내",
+              "url": "https://www.jijeforena.co.kr/BusinessGuide/documents"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "SiteNavigationElement",
+              "name": "타입안내",
+              "url": "https://www.jijeforena.co.kr/FloorPlan/59A"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "SiteNavigationElement",
+              "name": "언론보도",
+              "url": "https://www.jijeforena.co.kr/Promotion/Press"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "SiteNavigationElement",
+              "name": "관심고객등록",
+              "url": "https://www.jijeforena.co.kr/Promotion/Customer"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <noscript>
+    <section>
+      <h1>신분평 에피트 더웨이시티</h1>
+
+      <p>
+        신분평 에피트 더웨이시티 홈페이지입니다. 충청북도 청주시
+        서원구 장성동 135번지 일원, 장성지구 A2블록에 조성되는
+        지하 2층~지상 최고 29층, 총 10개 동, 992세대 규모의
+        에피트 브랜드 아파트입니다. 전용면적 59㎡A·B, 75㎡A·B,
+        84㎡A·B, 112㎡ 타입으로 구성되며 사업개요, 입지환경,
+        단지배치, 평면정보, 분양일정, 청약안내, 모델하우스 및
+        방문예약 정보를 확인하실 수 있습니다.
+      </p>
+    </section>
+
+    <nav aria-label="신분평 에피트 더웨이시티 주요 메뉴">
+      <a href="/">홈</a>
+      <a href="/Brand/intro">브랜드소개</a>
+      <a href="/BusinessGuide/intro">사업안내</a>
+      <a href="/BusinessGuide/plan">분양일정</a>
+      <a href="/LocationEnvironment/intro">입지환경</a>
+      <a href="/LocationEnvironment/primium">프리미엄</a>
+      <a href="/ComplexGuide/intro">단지배치도</a>
+      <a href="/ComplexGuide/detailintro">동·호수배치도</a>
+      <a href="/ComplexGuide/community">커뮤니티</a>
+      <a href="/BusinessGuide/documents">공급안내</a>
+      <a href="/SalesInfo/announcement">입주자모집공고</a>
+      <a href="/SalesInfo/guide">계약서류안내</a>
+      <a href="/SalesInfo/StampTax">인지세 납부 안내</a>
+      <a href="/FloorPlan/59A">59㎡A</a>
+      <a href="/FloorPlan/59B">59㎡B</a>
+      <a href="/FloorPlan/84A">75㎡A</a>
+      <a href="/FloorPlan/84B">75㎡B</a>
+      <a href="/FloorPlan/114A">84㎡A</a>
+      <a href="/FloorPlan/114B">84㎡B</a>
+      <a href="/FloorPlan/120A">112㎡</a>
+      <a href="/FloorPlan/Emodel">E-모델하우스</a>
+      <a href="/Promotion/Press">언론보도</a>
+      <a href="/Promotion/Customer">관심고객등록</a>
+    </nav>
+  </noscript>
+
+  <div id="root"></div>
+</body>
+
+</html>
