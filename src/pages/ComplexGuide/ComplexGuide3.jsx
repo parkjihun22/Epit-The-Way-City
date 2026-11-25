@@ -55,7 +55,7 @@ const ComplexGuide3 = () => {
 <MenuBar contents={menuContents} />
 <div className={styles.textBox}>
   <div>평택지제역 생활권을 누리는 프리미엄 라이프의 새로운 기준</div>
-  <div>한화포레나 지제역, 총 1,098세대 랜드마크 브랜드 단지</div>
+  <div>신분평 에피트 더웨이시티, 총 1,098세대 랜드마크 브랜드 단지</div>
 </div>
 
 <img

@@ -73,12 +73,12 @@ const items = [
         <img
           src={mobileMap}
           className={styles.mapImage}
-          alt="한화포레나 지제역 입지환경 지도"
+          alt="신분평 에피트 더웨이시티 입지환경 지도"
         />
         <img
           src={mobileMap2}
           className={styles.mapImage}
-          alt="한화포레나 지제역 평택지제역 생활권 지도"
+          alt="신분평 에피트 더웨이시티 평택지제역 생활권 지도"
         />
       </div>
     ),
