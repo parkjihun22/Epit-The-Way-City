@@ -17,7 +17,7 @@ const footerData = {
   familySites: [
     {
       name: "신분평 에피트 더웨이시티",
-      url: "https://www.jijeforena.co.kr/",
+      url: "https://sinbunpyeong-epit.co.kr/",
     },
   ],
 

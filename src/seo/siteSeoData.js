@@ -1,4 +1,4 @@
-const SITE_URL = "https://www.jijeforena.co.kr/";
+const SITE_URL = "https://sinbunpyeong-epit.co.kr/";
 
 export const siteSeo = {
   siteName: "신분평 에피트 더웨이시티",
